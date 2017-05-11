@@ -11,12 +11,12 @@ shinyServer(function(input, output) {
   #     re-executed when inputs change
   #  2) Its output type is a plot
   
-  output$distPlot <- renderPlot({
+  output$distPlot <- renderPlot({ # THIS IS WHAT LINKS TO UI
     x    <- faithful[, 2]  # Old Faithful Geyser data
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
     
     # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    hist(x, breaks = bins, col = 'darkgreen', border = 'hotpink')
   })
   
 })

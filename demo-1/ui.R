@@ -1,4 +1,4 @@
-# From http://shiny.rstudio.com/articles/basics.html
+# From: http://shiny.rstudio.com/articles/basics.html
 library(shiny)
 
 # Define UI for application that draws a histogram
@@ -19,7 +19,7 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("distPlot")
+      plotOutput("distPlot") # THIS IS WHAT LINKS TO SERVER
     )
   )
 ))
