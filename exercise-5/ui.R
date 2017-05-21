@@ -22,7 +22,7 @@ shinyUI(fluidPage(
       
       #selectInput for Agree or Disagree
       #inputID = thoughts
-      selectInput("thoughts", label = "Thoughts: ", choices = c("Agree", "Disagree")),
+      selectInput("thoughts", label = "Who: ", choices = c("Agree", "Disagree"), selected = "Agree")
       
     ),
     
